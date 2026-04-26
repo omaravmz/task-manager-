@@ -1,0 +1,36 @@
+.app-header {
+    background-color: #5a75ff;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #5a75ff;
+    border-color: #5a75ff;
+}
+
+.btn-primary:hover {
+    background-color: #2e48d8;
+    border-color: #2e48d8;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #5a75ff;
+    box-shadow: 0 0 0 0.2rem rgba(90, 117, 255, 0.25);
+}
+
+.task-info {
+    cursor: pointer;
+    flex: 1;
+    min-width: 0;
+}
+
+.completed .task-title {
+    text-decoration: line-through;
+    color: #adb5bd;
+}
+
+.completed small {
+    opacity: 0.5;
+}
