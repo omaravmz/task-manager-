@@ -35,6 +35,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Copy frontend to backend/public
+        run: cp -r frontend/. backend/public/
+
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:

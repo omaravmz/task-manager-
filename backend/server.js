@@ -2,12 +2,14 @@ require("dotenv").config();
 const express = require("express");
 const mysql = require("mysql2/promise");
 const cors = require("cors");
+const path = require("path");
 const initDatabase = require("./src/db/db");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 
 const dbConfig = {
     host: process.env.DB_HOST,
